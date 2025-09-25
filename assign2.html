@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating a Face</title>
+        <style>
+        body{
+            backgroung: black;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh;
+        }
+        .face{
+            position: relative;
+            width: 300px; height: 300px;
+            background: black;
+            border-radius: 50%;
+            }
+            .ear{
+                position: absolute;
+                width: 40px; height: 40px;
+                background: black;
+                border-radius: 50%;
+                top: 90px;
+            }
+            .ear.left{left: -30px;}
+            .ear.right{right: -30px;}
+            .eye{
+                position: absolute;
+                width: 40px; height: 40px;
+                background: white;
+                border-radius: 50%;
+                top: 90px;
+            }
+            .eye.left{left: 70px;}
+            .eye.right{right: 70px;}
+            .nose{
+                position: absolute;
+                left: 50%; top: 140px;
+                width: 0; height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 40px solid white;
+                transform: translateX(-50%);
+            }
+            .mouth{
+                position: absolute;
+                bottom: 60px; left: 50%;
+                width: 70px; height: 20px;
+                background: white;
+                transform: translateX(-50%);
+            }
+            </style>
+    </head>
+    <body>
+        <div class="face">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+    </body>
+    </html>
